@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: #080023;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .app {
+    padding: 20px 20px;
+    background-color: #080023;
+    color: white;
+  }
+  
+  .active {
+    cursor: grabbing;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 20px 20px;
+    width: 100%;
+    min-height: 95vh;
+    border-radius: 20px;
+    background-color: #3957ac;
+    box-shadow: 5px 5px #060019;
+  }
+  .container h1 {
+    margin: 20px 0;
+  }
+  .container p {
+    color: white;
+    margin: 10px 0;
+  }
+  .container .button__container {
+    display: flex;
+    justify-content: center;
+  }
+  .container .add__button {
+    margin: 10px 0;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: #fd00fd;
+    color: white;
+    position: fixed;
+    bottom: 3%;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll hidden;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  .personal__category, .business__category {
+    margin: 16px 15px;
+    padding: 20px 35px;
+    background-color: #140056;
+    border-radius: 20px;
+    flex: 0 0 auto;
+  }
+  .personal__category p, .business__category p {
+    margin-bottom: 10px;
+    color: #2c00bc;
+  }
+  .personal__category hr, .business__category hr {
+    margin-top: 5px;
+  }
+  
+  .business__category hr {
+    border-color: #fd00fd;
+  }
+  
+  .personal__category hr {
+    border-color: #0073ff;
+  }
+  
+  .tasks {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    max-height: 400px;
+  }
+  .tasks .task {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #140056;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  .tasks .task .personal__circle, .tasks .task .business__circle {
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    margin-right: 30px;
+  }
+  .tasks .task .business__circle {
+    border-color: #fd00fd;
+  }
+  .tasks .task .personal__circle {
+    border-color: #0073ff;
+    border-width: 3px;
+  }
+  .tasks .task .check {
+    fill: white;
+  }
+  
+  .tasks::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media (min-width: 420px) {
+    .container {
+      width: 420px;
+    }
+  }
